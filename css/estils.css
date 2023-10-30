@@ -1,0 +1,46 @@
+
+/* RESET */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* VARIABLES */
+
+:root {
+    --color-contrast: rgb(254, 105, 106);
+}
+
+/* TIPOGRAFIA */
+
+body {
+    font-family: Verdana, Tahoma, sans-serif;
+    color: rgb(43,52,69);
+}
+
+a {
+    color: var(--color-contrast);
+    text-decoration: none;
+}
+
+a:hover {
+    color: rgba(var(--color-contrast), 0.5);
+}
+
+span.x-letter {
+    font-family: Georgia, 'Times New Roman', serif;
+    font-style: italic;
+}
+
+.logo {
+    font-size: 1.5rem;
+}
+
+/* LAYOUT */
+
+header {
+    background-color: rgb(241, 245, 249);
+    text-align: center;
+}
