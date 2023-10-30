@@ -10,14 +10,20 @@
 /* VARIABLES */
 
 :root {
+    --color-normal: rgb(43,52,69);
     --color-contrast: rgb(254, 105, 106);
+    --color-contrast-alpha: rgba(254, 105, 106, 0.5);
 }
 
 /* TIPOGRAFIA */
 
 body {
     font-family: Verdana, Tahoma, sans-serif;
-    color: rgb(43,52,69);
+    color: var(--color-normal);
+}
+
+h1 {
+    text-align: center;
 }
 
 a {
@@ -29,18 +35,158 @@ a:hover {
     color: rgba(var(--color-contrast), 0.5);
 }
 
-span.x-letter {
-    font-family: Georgia, 'Times New Roman', serif;
-    font-style: italic;
+a.logo{
+    font-size: 3rem;
+    font-weight: bold;
+    color: var(--color-normal);
 }
 
-.logo {
-    font-size: 1.5rem;
+nav a {
+    color: black;
+    font-weight: bold;
+    text-transform: uppercase;
 }
+
+
+a.logo:hover,
+nav a:hover {
+    color: var(--color-contrast-alpha);
+}
+
+nav a.active {
+    color: var(--color-contrast);
+}
+
+span.x-letter {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-style: italic;
+    font-size: 3.5rem;
+}
+
+h1 {
+    font-size: 2.5rem;
+    line-height: 1.15;
+}
+
+p.author {
+    text-align: center;
+    font-size: 0.8rem;
+}
+
+figure.hero-image figcaption {
+    font-size: 1.1rem;
+    line-height: 1.6;
+}
+
+h2 {
+    font-size: 2rem;
+}
+
+p {
+    font-size: 1.1rem;
+    line-height: 1.58;
+}
+
+q {
+    quotes: "«" "»";
+}
+
+
+
+blockquote {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-weight: bold;
+    font-style: italic;
+    font-size: 1.15rem;
+    line-height: 1.5;
+    letter-spacing: -0.38px;
+}
+
+.font p{
+    font-size: 0.875rem;
+    line-height: 0.7;
+    letter-spacing: -0.02px;
+}
+
+footer p {
+    color: rgb(255, 255, 255);
+    font-size: 0.8rem;
+}
+
 
 /* LAYOUT */
 
 header {
     background-color: rgb(241, 245, 249);
     text-align: center;
+    padding: 1em 0 1.4em 0;
+}
+
+nav {
+    margin-top: 1.5em;
+}
+
+nav a {
+    display: block;
+    margin-top: 0.7em;
+}
+
+main {
+    width: 67.5%;
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+h1 {
+    margin-top: 0.75em;
+}
+
+p.author {
+    margin-top: 1.2em;
+}
+
+figure.hero-image {
+    margin-top: 2em;
+    
+}
+
+figure.hero-image figcaption {
+    width: 79.6%;
+    margin: 1.95em auto 0 auto;
+    padding-bottom: 1em;
+}
+
+h2 {
+    margin-top: 0.4em;
+}
+
+p {
+    margin-top: 1em;
+}
+
+abbr {
+    text-underline-offset: 3px;
+}
+
+blockquote {
+    border-left: 8px solid var(--color-contrast);
+    margin-top: 0.8em;
+    margin-left: 2.35em;
+    padding-left: 0.8em;
+    width: 90%;
+}
+
+.font {
+    margin-top: 2.6em;
+}
+
+
+footer {
+    background-color: rgb(0, 0, 0);
+    margin-top: 4.4em;
+    padding: 1.5em 2em 2.5em 2em;
+}
+
+footer p {
+    margin-top: 0.5em;
 }
