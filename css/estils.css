@@ -113,8 +113,29 @@ footer p {
     font-size: 0.8rem;
 }
 
+/* Estadístiques */
+
+ol>li p{
+    font-size: 1.6rem;
+}
+
+ol>li::marker {
+    font-size: 1.6rem;
+}
+
+ol li ul, li.users p {
+    font-size: 1.15rem;
+    letter-spacing: -0.45px;
+}
+
+ol li ul li ul li{
+    line-height: 1.5;
+}
+
 
 /* LAYOUT */
+
+/* Article */
 
 header {
     background-color: rgb(241, 245, 249);
@@ -189,4 +210,49 @@ footer {
 
 footer p {
     margin-top: 0.5em;
+}
+
+/* Estadístiques */
+
+.statistics-subtitle {
+    margin-top: 2em;
+    margin-bottom: 0;
+}
+
+ol>li {
+    margin-top: -0.5em;
+    margin-left: 3em;
+    
+}
+
+ul li {
+    list-style-type: disc;
+}
+
+ol li ul li{
+    margin-top: 0.9em;
+    margin-left: 2.7em;
+}
+
+ol li ul li ul li{
+    margin-top: 0.65em;
+}
+
+li.users {
+    list-style-type: none; 
+    margin-top: 0.8em;
+}
+
+li.users:nth-child(2) {
+    margin-top: 0.8em;
+}
+
+li.users p {
+    margin-left: -1.4em;
+}
+
+i {
+    transform: scaleX(-1) scale(0.7);
+    margin-right: 0.1em;
+
 }
