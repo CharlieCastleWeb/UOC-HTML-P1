@@ -254,5 +254,34 @@ li.users p {
 i {
     transform: scaleX(-1) scale(0.7);
     margin-right: 0.1em;
+}
 
+/* Xarxes */
+
+.xarxa-social {
+    margin-top: 1.7em;
+}
+
+.xarxa-social p:first-of-type {
+    margin-top: 0.2em;
+}
+
+.xarxa-social figure {
+    margin-top: 1em;
+    text-align: center;
+}
+
+.xarxa-social figcaption {
+    font-size: 0.71rem;
+    margin-top: 1.2em;
+}
+
+/* .xarxa-social figcaption a {
+    font-size: 1rem;
+} */
+
+.xarxa-social>a:last-of-type {
+    font-size: 0.8rem;
+    display: block;
+    margin-top: 1.6em;
 }
