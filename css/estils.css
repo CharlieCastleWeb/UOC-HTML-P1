@@ -16,6 +16,8 @@
 
 /* TIPOGRAFIA */
 
+/* Article */
+
 body {
     font-family: Verdana, Tahoma, sans-serif;
     color: var(--color-normal);
@@ -31,7 +33,7 @@ a {
 }
 
 a:hover {
-    color: rgba(var(--color-contrast), 0.5);
+    color: var(--color-contrast-alpha);
 }
 
 a.logo {
@@ -106,6 +108,32 @@ blockquote {
 
 footer p {
     color: rgb(255, 255, 255);
+    font-size: 0.8rem;
+}
+
+/* Estadístiques */
+
+ul.users p {
+    font-size: 1rem;
+}
+
+/* Xarxes */
+
+dt {
+    font-family: Georgia, "Times New Roman", Times, serif;
+    font-size: 1.3rem;
+    font-weight: bold;
+}
+
+dd figure {
+    text-align: center;
+}
+
+dd figcaption {
+    font-size: 0.71rem;
+}
+
+dd > a:last-of-type {
     font-size: 0.8rem;
 }
 
@@ -234,31 +262,31 @@ ol li ul li ul li {
 
 ul.users {
     list-style-image: url(../img/users.svg);
-    margin-top: 0.8em;
 }
 
 /* Xarxes */
 
-.xarxa-social {
-    margin-top: 1.7em;
+dt {
+    margin-top: 1.4em;
 }
 
-.xarxa-social p:first-of-type {
+dd {
+    margin-top: 0em;
+}
+
+dd p:first-of-type {
     margin-top: 0.2em;
 }
 
-.xarxa-social figure {
+dd figure {
     margin-top: 1em;
-    text-align: center;
 }
 
-.xarxa-social figcaption {
-    font-size: 0.71rem;
+dd figcaption {
     margin-top: 1.2em;
 }
 
-.xarxa-social > a:last-of-type {
-    font-size: 0.8rem;
+dd > a:last-of-type {
     display: block;
     margin-top: 1.6em;
 }
