@@ -1,4 +1,3 @@
-
 /* RESET */
 
 * {
@@ -10,7 +9,7 @@
 /* VARIABLES */
 
 :root {
-    --color-normal: rgb(43,52,69);
+    --color-normal: rgb(43, 52, 69);
     --color-contrast: rgb(254, 105, 106);
     --color-contrast-alpha: rgba(254, 105, 106, 0.5);
 }
@@ -35,7 +34,7 @@ a:hover {
     color: rgba(var(--color-contrast), 0.5);
 }
 
-a.logo{
+a.logo {
     font-size: 3rem;
     font-weight: bold;
     color: var(--color-normal);
@@ -47,7 +46,6 @@ nav a {
     text-transform: uppercase;
 }
 
-
 a.logo:hover,
 nav a:hover {
     color: var(--color-contrast-alpha);
@@ -58,7 +56,7 @@ nav a.active {
 }
 
 span.x-letter {
-    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-family: Georgia, "Times New Roman", Times, serif;
     font-style: italic;
     font-size: 3.5rem;
 }
@@ -91,10 +89,8 @@ q {
     quotes: "«" "»";
 }
 
-
-
 blockquote {
-    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-family: Georgia, "Times New Roman", Times, serif;
     font-weight: bold;
     font-style: italic;
     font-size: 1.15rem;
@@ -102,7 +98,7 @@ blockquote {
     letter-spacing: -0.38px;
 }
 
-.font p{
+.font p {
     font-size: 0.875rem;
     line-height: 0.7;
     letter-spacing: -0.02px;
@@ -115,23 +111,23 @@ footer p {
 
 /* Estadístiques */
 
-ol>li p{
+ol > li p {
     font-size: 1.6rem;
 }
 
-ol>li::marker {
+ol > li::marker {
     font-size: 1.6rem;
 }
 
-ol li ul, li.users p {
+ol li ul,
+li.users p {
     font-size: 1.15rem;
     letter-spacing: -0.45px;
 }
 
-ol li ul li ul li{
+ol li ul li ul li {
     line-height: 1.5;
 }
-
 
 /* LAYOUT */
 
@@ -168,7 +164,6 @@ p.author {
 
 figure.hero-image {
     margin-top: 2em;
-    
 }
 
 figure.hero-image figcaption {
@@ -201,7 +196,6 @@ blockquote {
     margin-top: 2.6em;
 }
 
-
 footer {
     background-color: rgb(0, 0, 0);
     margin-top: 4.4em;
@@ -219,41 +213,28 @@ footer p {
     margin-bottom: 0;
 }
 
-ol>li {
+ol li {
     margin-top: -0.5em;
     margin-left: 3em;
-    
 }
 
-ul li {
+ol li ul {
     list-style-type: disc;
+    list-style-image: none;
 }
 
-ol li ul li{
+ol li ul li {
     margin-top: 0.9em;
     margin-left: 2.7em;
 }
 
-ol li ul li ul li{
+ol li ul li ul li {
     margin-top: 0.65em;
 }
 
-li.users {
-    list-style-type: none; 
+ul.users {
+    list-style-image: url(../img/users.svg);
     margin-top: 0.8em;
-}
-
-li.users:nth-child(2) {
-    margin-top: 0.8em;
-}
-
-li.users p {
-    margin-left: -1.4em;
-}
-
-i {
-    transform: scaleX(-1) scale(0.7);
-    margin-right: 0.1em;
 }
 
 /* Xarxes */
@@ -276,11 +257,7 @@ i {
     margin-top: 1.2em;
 }
 
-/* .xarxa-social figcaption a {
-    font-size: 1rem;
-} */
-
-.xarxa-social>a:last-of-type {
+.xarxa-social > a:last-of-type {
     font-size: 0.8rem;
     display: block;
     margin-top: 1.6em;
